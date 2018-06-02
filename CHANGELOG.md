@@ -11,6 +11,7 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 ### Added
 - Column `clients.contract`
 - Contract in demonstrative
+- Unique key in `clients`: `assignor` and `contract`
 
 ### Changed
 - Billet demonstrative and instructions

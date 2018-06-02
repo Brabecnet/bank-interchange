@@ -25,6 +25,7 @@ class Client extends Medools\Model
         'assignor',
         'person',
         'address',
+        'contract',
     ];
 
     const FOREIGN_KEYS = [

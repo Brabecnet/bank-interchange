@@ -106,6 +106,7 @@ tables:
     assignor: int -> assignors.person
     person: int -> people.id
     address: int -> full_addresses.id
+    contract: char(8)
 
   titles:
     id: pk_auto

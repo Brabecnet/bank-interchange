@@ -16,6 +16,9 @@ payment_place: Pagável em qualquer Banco até o vencimento
 demonstrative: |-
   Pagamento de boleto - Teste de boleto
   Taxa bancária - {{ tax_value }}
+
+  Contrato: {{ client->contract }}
+
   {{ description }}
   BankInterchange - https://www.github.com/aryelgois/bank-interchange
 

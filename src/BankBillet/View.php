@@ -193,7 +193,15 @@ abstract class View extends FPDF implements FilePack\ViewInterface
     public function filename()
     {
         $title = $this->title;
-        return $title->assignment->id . '-' . $title->doc_number;
+
+        return sprintf(
+            '%s-%s %s %s %s',
+            $title->assignment->id,
+            $title->doc_number,
+            $title->due,
+            $title->client->contract,
+            $title->client->person->name
+        );
     }
 
     /**

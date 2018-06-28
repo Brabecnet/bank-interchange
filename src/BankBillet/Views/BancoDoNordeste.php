@@ -55,6 +55,11 @@ class BancoDoNordeste extends CaixaEconomicaFederal
     {
         $wallet = $this->title->assignment->wallet;
         $this->fields['wallet']['value'] = $wallet->operation;
+
+        $client = $this->title->client;
+        $this->fields['client']['value'] .= '     '
+            . $client->person->getFormattedDocument(true);
+
         parent::drawBillet();
     }
 }
